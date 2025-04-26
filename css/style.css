@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+
+#titulos {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  background-color: grey;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+/* Contenedor principal del header */
+header div {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+/* ===== Menú de navegación ===== */
+.navegador {
+  width: 50%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.navegador ul {
+  list-style: none;
+  display: flex;
+}
+
+.navegador li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.navegador li a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Encabezados de main ===== */
+main section h1 {
+  padding: 20px;
+}
+
+/* ===== Estilos de clase titulos===== */
+
+.titulos {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+/* ===== Estilos de la clase articulos ===== */
+div .articulos {
+  image-rendering: auto;
+  padding: 15px;
+}
+
+/* ===== Estilos de secciones dentro de main y de contenedor dentro de footer ===== */
+main section,
+footer div {
+  width: 1100px;
+  margin: 0% auto;
+}
+
+main section {
+  padding: 20px;
+}
+
+main section h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+}
+
+main section h2:hover {
+  text-decoration: underline;
+}
+
+/* ===== Estilos de parrafos en general ===== */
+p {
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-index {
+  display: flex;
+  grid-template: repeat(6, 300px) / repeat(4, 300px);
+  flex-direction: column;
+  gap: 15px;
+}
+
+.index-1 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.index-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  margin-bottom: 0;
+}
+
+.index-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column: 1 / 4;
+  grid-row: 4 / 6;
+  margin-top: 20px;
+  align-items: center;
+}
+
+/* ===== Contenedor de servicios ===== */
+.contenedor-servicios {
+  background-color: grey;
+  border: 10px solid white;
+  border-radius: 10px;
+  display: grid;
+  gap: 5px;
+  padding: 20px;
+  grid-template: repeat(2, 2fr) / repeat(2, 2fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.box-servicios {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== Estilos de la clase servicios===== */
+.servicios {
+  display: flex;
+  align-items: center; /* Alinea el texto e imagen verticalmente */
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  max-width: 350px; /* Ajusta según necesidad */
+}
+
+.servicios img {
+  margin-left: 5px; /* Espacio entre texto e imagen */
+  border-radius: 5px;
+  font-size: 120px;
+}
+
+.servicios img:hover {
+  margin-left: 10px; /* Espacio entre texto e imagen */
+  border-radius: 5px;
+}
+
+.servicios:hover {
+  zoom: 100%;
+  border: solid greenyellow;
+}
+
+.contenedor-productos {
+  display: flex;
+}
+
+.box-productos {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.productos {
+  text-align: center;
+  width: 100%;
+  padding: 35px;
+  font-size: 30px;
+  gap: 30px;
+}
+
+.productos img {
+  width: 100%;
+  border: solid;
+  border-radius: 10px;
+}
+
+.productos img:hover {
+  cursor: zoom-in;
+}
+
+.contenedor-contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 40%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+}
+
+.contactos {
+  background-color: grey;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vh;
+  height: 60vh;
+  border-radius: 15px;
+  border:solid 5px white;
+  gap: 20px;
+}
+
+.contactos label {
+  font-size: 30px;
+}
+
+.contactos input {
+  font-size: 15px;
+  border: solid white 10px;
+  border-radius: 10px;
+}
+
+.contactos input:focus {
+  font-size: 25px;
+}
+
+.contactos textarea {
+  font-size: 15px;
+  border: solid white 10px;
+  border-radius: 10px;
+}
+
+.contactos textarea:focus {
+  font-size: 25px;
+}
+
+.contactos button {
+  font-size: 20px;
+}
+
+.contactos button:hover {
+  zoom: 150%;
+}
+
+/* ===== Estilos de footer ===== */
+footer {
+  background-color: grey;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    
+  }
+
+  .grid-index {
+    display: block;
+    width: 550px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header img {
+    display:none;
+  }
+  
+  .sections{
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .contenedor-servicios {
+  background-color: grey;
+  border: 10px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  grid-template: repeat(2, 2fr) / repeat(2, 2fr);
+  justify-items: center;
+  align-items: center;
+  width: fit-content;
+  margin-left: 10%;
+  margin-top: 30px;
+  
+}
+
+.contenedor-contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  margin-left:0.3rem;
+  
+}
+
+
+
+
+}
