@@ -244,7 +244,7 @@ p {
   width: 50vh;
   height: 60vh;
   border-radius: 15px;
-  border:solid 5px white;
+  border: solid 5px white;
   gap: 20px;
 }
 
@@ -290,7 +290,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   body {
     color: white;
     background-color: black;
@@ -298,7 +297,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   header div {
     width: 100%;
     margin: 0 auto;
@@ -306,7 +305,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px 20px;
-    
   }
 
   .grid-index {
@@ -318,44 +316,102 @@ footer {
   }
 
   header img {
-    display:none;
+    display: none;
   }
-  
-  .sections{
+
+  .sections {
     width: 600px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
   .contenedor-servicios {
-  background-color: grey;
-  border: 10px solid white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 20px;
-  grid-template: repeat(2, 2fr) / repeat(2, 2fr);
-  justify-items: center;
-  align-items: center;
-  width: fit-content;
-  margin-left: 10%;
-  margin-top: 30px;
-  
+    background-color: grey;
+    border: 10px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    grid-template: repeat(2, 2fr) / repeat(2, 2fr);
+    justify-items: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+
+  .contenedor-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 0.3rem;
+  }
 }
 
-.contenedor-contactos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: fit-content;
-  width: fit-content;
-  margin-left:0.3rem;
-  
-}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  header div {
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+  }
 
+  .grid-index {
+    display: block;
+    width: 700px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  header img {
+    display: none;
+  }
 
+  .sections {
+    width: 1000px;
+    height: 800px;
+    margin-top: 15px;
+  }
+
+  .contenedor-servicios {
+    background-color: grey;
+    border: 10px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    margin-left: 7%;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contenedor-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 0.3rem;
+    margin-top: 105px;
+  }
 }
