@@ -194,9 +194,7 @@ p {
   border: solid #6df043;
 }
 
-.contenedor-productos {
-  display: flex;
-}
+
 
 .box-productos {
   display: flex;
@@ -262,6 +260,7 @@ p {
   font-size: 15px;
   border: solid white 10px;
   border-radius: 10px;
+  width: 50%;
 }
 
 .contactos input:focus {
@@ -272,6 +271,7 @@ p {
   font-size: 15px;
   border: solid white 10px;
   border-radius: 10px;
+  width: 50%;
 }
 
 .contactos textarea:focus {
@@ -327,6 +327,7 @@ footer {
     gap: 15px;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 7%;
   }
 
   header img {
@@ -359,7 +360,6 @@ footer {
     flex-direction: column;
     gap: 5px;
     padding: 20px;
-    grid-template: repeat(2, 2fr) / repeat(2, 2fr);
     justify-items: center;
     align-items: center;
     width: fit-content;
@@ -414,6 +414,7 @@ footer {
     gap: 15px;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 3%;
   }
 
   header img {
