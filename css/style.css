@@ -194,8 +194,6 @@ p {
   border: solid #6df043;
 }
 
-
-
 .box-productos {
   display: flex;
   border-radius: 10px;
@@ -313,7 +311,7 @@ footer {
   }
 
   header div {
-    width: 100%;
+    width:600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -335,7 +333,7 @@ footer {
   }
 
   .sections {
-    width: 600px;
+    width: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
