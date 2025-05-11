@@ -32,26 +32,26 @@ header {
   top: 0;
 }
 
-.navbar{
-  background-color: #dae9ef;
+.navbar {
+  background-color: #dae9ef !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 40px;
 }
 .navbar .container-fluid {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.container-fluid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nav-item{
+.nav-item {
   font-size: 25px;
 }
 /* Contenedor principal del header */
@@ -106,7 +106,7 @@ div .articulos {
 }
 
 /* ===== Estilos de secciones dentro de main y de contenedor dentro de footer ===== */
-main section,
+
 footer div {
   width: 1100px;
   margin: 0% auto;
@@ -114,6 +114,7 @@ footer div {
 
 main section {
   padding: 20px;
+  margin: 0% auto;
 }
 
 main section h2 {
@@ -135,11 +136,11 @@ p {
 
 .grid-index {
   display: grid;
-  grid-template: repeat(6, 300px) / repeat(3, 300px);
-  margin-left: 27%;
+  grid-template: repeat(3, 300px) / repeat(3, 300px);
   gap: 15px;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0;
+  justify-items: center;
 }
 
 .index-1 {
@@ -242,20 +243,6 @@ p {
   cursor: zoom-in;
 }
 
-.contenedor-contactos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: fit-content;
-  width: fit-content;
-  position: relative;
-  margin-top: 5%;
-  margin-left: 31%;
-  margin-bottom: 10%;
-  margin-right: 10%;
-}
-
 .contactos {
   background-color: #dae9ef;
   color: black;
@@ -265,11 +252,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 800px;
-  height: 800px;
+  width: 30rem;
+  height: 40rem;
   border-radius: 15px;
   border: solid 5px;
   gap: 20px;
+  margin-left: 23rem;
 }
 
 .contactos label {
@@ -322,8 +310,6 @@ footer {
     color: white;
     background-color: black;
     font-size: 16px;
-    /*display:block;
-    flex-direction: column;*/
   }
 
   #titulos {
@@ -332,46 +318,26 @@ footer {
     font-size: 25px;
   }
 
-  
-
-  /*header div {
-    width: 26rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navegador ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  header img {
-    display: none;
-  }*/
-
   .grid-index {
     display: block;
     width: 23rem;
     gap: 5px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .sections {
-    width: 26rem;
+    width: 24rem;
     margin-left: 2rem;
   }
 
   .contenedor-productos {
     display: flex;
-    width: 400px;
-    height: 500px;
+    width: 23rem;
   }
 
   .productos img {
-    width: 19rem;
+    width: 16rem;
     border: solid;
     border-radius: 10px;
   }
@@ -391,7 +357,7 @@ footer {
   }
 
   .contenedor-contactos {
-    margin-left: 4%;
+    margin-left: 2rem;
   }
   .contactos {
     background-color: #dae9ef;
@@ -407,12 +373,11 @@ footer {
     border-radius: 15px;
     border: solid 5px;
     gap: 20px;
-    margin-left:1.4rem;
-    margin-top: 10rem;
+    margin-left: 3rem;
   }
 }
 
-@media (min-width:501px)and (max-width: 1100px) {
+@media (min-width: 501px) and (max-width: 1100px) {
   body {
     color: white;
     background-color: black;
@@ -425,7 +390,6 @@ footer {
     text-align: center;
   }
 
-
   /*header div {
     display: flex;
     padding: 15px 20px;
@@ -434,15 +398,15 @@ footer {
 
   .grid-index {
     display: block;
-    width: 700px;
+    width: 30rem;
     gap: 15px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 3%;
+    margin-left: 10rem;
   }
 
   .sections {
-    width: 600px;
+    width: 35rem;
     height: 500px;
     margin-top: 30px;
   }
@@ -457,29 +421,18 @@ footer {
     padding: 20px;
     justify-items: center;
     align-items: center;
-    width: fit-content;
+    width: 30rem;
     height: fit-content;
-    margin-left: 3%;
+    margin-left: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 13px;
+    margin-top: 20px;
   }
 
   .productos img {
     width: 500px;
     border: solid;
     border-radius: 10px;
-  }
-
-  .contenedor-contactos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: fit-content;
-    width: fit-content;
-    margin-left: 0.3rem;
-    margin-top: 10px;
   }
 
   .contactos {
@@ -491,10 +444,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 600px;
-    height: 800px;
+    width: 30rem;
+    height: 40rem;
     border-radius: 15px;
     border: solid 5px;
     gap: 20px;
+    margin-left: 9rem;
   }
 }
