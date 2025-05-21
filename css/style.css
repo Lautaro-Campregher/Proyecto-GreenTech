@@ -1,4 +1,11 @@
 @import "https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap";
+.button-enviar, .contactos button {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -42,8 +49,7 @@ header {
   padding-left: 0;
   padding-right: 0;
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   font-size: 40px;
 }
 
@@ -59,6 +65,7 @@ header {
 
 main section {
   margin: 0% auto;
+  width: 80rem;
 }
 main section h2 {
   text-align: center;
@@ -86,7 +93,7 @@ footer {
   right: 0;
   left: 0;
   color: black;
-  font-size: 19px;
+  font-size: 15px;
 }
 footer div {
   width: 1100px;
@@ -107,24 +114,21 @@ p {
   margin-top: 0;
   justify-items: center;
 }
-
-.index-1 {
+.grid-index .index-1 {
   display: grid;
   text-align: center;
   grid-column: 1/4;
   grid-row: 1/3;
   align-content: space-evenly;
 }
-
-.index-2 {
+.grid-index .index-2 {
   display: grid;
   grid-column: 1/4;
   grid-row: 3/5;
   margin-bottom: 0;
   justify-items: stretch;
 }
-
-.index-3 {
+.grid-index .index-3 {
   display: grid;
   justify-content: space-between;
   grid-column: 1/4;
@@ -146,15 +150,13 @@ p {
   align-items: center;
   margin-top: 1rem;
 }
-
-.box-servicios {
+.contenedor-servicios .box-servicios {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.servicios {
+.contenedor-servicios .servicios {
   display: flex;
   align-items: center;
   background-color: black;
@@ -163,26 +165,23 @@ p {
   font-size: 20px;
   max-width: 350px;
 }
-.servicios img {
+.contenedor-servicios .servicios img {
   margin-left: 5px;
   border-radius: 5px;
   font-size: 120px;
 }
-.servicios img:hover {
+.contenedor-servicios .servicios img:hover {
   margin-left: 10px;
   border-radius: 5px;
 }
-.servicios:hover {
+.contenedor-servicios .servicios:hover {
   zoom: 100%;
   border: solid #6df043;
 }
 
 .box-productos {
   display: flex;
-  border-radius: 10px;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 .productos {
@@ -222,27 +221,26 @@ p {
   font-size: 30px;
 }
 .contactos input {
+  font-size: 15px;
+  border: 10px;
+  border-radius: white;
   width: 50%;
-  width: 50%;
-}
-.contactos input:focus {
-  font-size: 25px;
 }
 .contactos input:focus {
   font-size: 25px;
 }
 .contactos textarea {
+  font-size: 15px;
+  border: 10px;
+  border-radius: white;
   width: 50%;
-  width: 50%;
-}
-.contactos textarea:focus {
-  font-size: 25px;
 }
 .contactos textarea:focus {
   font-size: 25px;
 }
 .contactos button {
-  font-size: 20px;
+  background-color: black;
+  color: #dae9ef;
 }
 .contactos button:hover {
   zoom: 150%;
@@ -327,9 +325,10 @@ p {
     margin-left: 10rem;
   }
   .sections {
-    width: 35rem;
-    height: 500px;
-    margin-top: 30px;
+    width: 40rem;
+    /*height: 70rem;
+    margin-top: 30px;*/
+    padding: 2rem;
   }
   .contenedor-servicios {
     display: flex;
