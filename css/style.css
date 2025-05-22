@@ -139,8 +139,8 @@ p {
 }
 
 .contenedor-servicios {
-  background-color: #dae9ef;
-  border: 8px solid white;
+  background-color: black;
+  border: 2px solid white;
   border-radius: 10px;
   display: grid;
   gap: 5px;
@@ -163,20 +163,18 @@ p {
   padding: 15px;
   border-radius: 10px;
   font-size: 20px;
-  max-width: 350px;
+  width: 350px;
+  transition: width 1.2s ease-in-out, background-color 2s ease-in-out, color 2s ease-in-out;
 }
 .contenedor-servicios .servicios img {
   margin-left: 5px;
   border-radius: 5px;
   font-size: 120px;
 }
-.contenedor-servicios .servicios img:hover {
-  margin-left: 10px;
-  border-radius: 5px;
-}
 .contenedor-servicios .servicios:hover {
-  zoom: 100%;
-  border: solid #6df043;
+  width: 380px;
+  background-color: #dae9ef;
+  color: black;
 }
 
 .box-productos {
@@ -243,7 +241,7 @@ p {
   color: #dae9ef;
 }
 .contactos button:hover {
-  zoom: 150%;
+  transform: scale(1);
 }
 
 @media (max-width: 500px) {

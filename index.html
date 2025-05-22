@@ -18,6 +18,7 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
   
   </head>
@@ -89,7 +90,7 @@
     <main>
       <!--Contenido principal de la pagina-->
       <section class="grid-index">
-        <div class="index-1">
+        <div class="index-1" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-out">
           <h2>¿Que es GreenTech?</h2>
           <p>
             Somos una empresa lider en ofrecer sistemas de riego e invernaderos
@@ -101,7 +102,7 @@
           </p>
         </div>
 
-        <div class="index-2">
+        <div class="index-2" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-out">
           <article>
             <h2>Introduccíon a nuestros trabajos</h2>
             <video
@@ -113,7 +114,7 @@
           </article>
         </div>
 
-        <div class="index-3">
+        <div class="index-3" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-out">
           <article>
             <h2>Impacto en la agricultura</h2>
             <p>
@@ -131,5 +132,9 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
