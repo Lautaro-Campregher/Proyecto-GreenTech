@@ -86,6 +86,10 @@ div .articulos {
   padding: 15px;
 }
 
+.sections {
+  margin-top: 3rem;
+}
+
 footer {
   background-color: #dae9ef;
   position: fixed;
@@ -181,20 +185,19 @@ p {
   display: flex;
   flex-direction: column;
 }
-
-.productos {
+.box-productos .productos {
   text-align: center;
   width: 100%;
   padding: 35px;
   font-size: 30px;
   gap: 30px;
 }
-.productos img {
+.box-productos .productos img {
   width: 800px;
   border: solid;
   border-radius: 10px;
 }
-.productos img:hover {
+.box-productos .productos img:hover {
   cursor: zoom-in;
 }
 
