@@ -69,10 +69,20 @@ main section {
 }
 main section h2 {
   text-align: center;
-  padding: 20px;
-  font-size: 40px;
+  font-size: 60px;
 }
-main section h2:hover {
+main section h3 {
+  padding: 20px;
+  font-size: 45px;
+}
+main section h3:hover {
+  text-decoration: underline;
+}
+main section h4 {
+  padding: 20px;
+  font-size: 30px;
+}
+main section h4:hover {
   text-decoration: underline;
 }
 

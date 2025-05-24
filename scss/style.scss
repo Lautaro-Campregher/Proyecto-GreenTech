@@ -13,6 +13,7 @@ $border-radius: 10px;
   cursor: pointer;
 }
 
+
 @mixin input-txtstyles($font-size, $border, $border-radius) {
   font-size: $font-size;
   border: $border;
@@ -77,8 +78,20 @@ main {
     width: 80rem;
     h2 {
       text-align: center;
+      font-size: 60px;
+      
+    }
+    h3{
       padding: 20px;
-      font-size: 40px;
+      font-size: 45px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    h4{
+      padding:20px;
+      font-size: 30px;
       &:hover {
         text-decoration: underline;
       }
@@ -201,6 +214,7 @@ p {
     padding: 35px;
     font-size: 30px;
     gap: 30px;
+  
     img {
       width: 800px;
       border: solid;
@@ -211,7 +225,8 @@ p {
     }
   }
 }
-.contactos {
+
+  .contactos {
   background-color: $secondary-color;
   color: $primary-color;
   padding: 20px;
