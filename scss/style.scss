@@ -11,14 +11,21 @@ $border-radius: 10px;
   border-radius: $border-radius;
   font-size: 20px;
   cursor: pointer;
-}
 
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
 
 @mixin input-txtstyles($font-size, $border, $border-radius) {
   font-size: $font-size;
   border: $border;
   border-radius: $border-radius;
-  &:focus {
+  &:hover {
     font-size: 25px;
   }
 }
@@ -76,22 +83,21 @@ main {
   section {
     margin: 0% auto;
     width: 80rem;
-    
+
     h2 {
       text-align: center;
       font-size: 60px;
-      
     }
-    h3{
+    h3 {
       padding: 20px;
       font-size: 45px;
       &:hover {
         text-decoration: underline;
       }
     }
-    
-    h4{
-      padding:20px;
+
+    h4 {
+      padding: 20px;
       font-size: 30px;
       &:hover {
         text-decoration: underline;
@@ -215,7 +221,7 @@ p {
     padding: 35px;
     font-size: 30px;
     gap: 30px;
-  
+
     img {
       width: 800px;
       border: solid;
@@ -227,7 +233,7 @@ p {
   }
 }
 
-  .contactos {
+.contactos {
   background-color: $secondary-color;
   color: $primary-color;
   padding: 20px;
@@ -258,9 +264,15 @@ p {
     @extend .button-enviar;
     background-color: $primary-color;
     color: $secondary-color;
-  }
-  button:hover {
-    transform: scale(1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
   }
 }
 
@@ -281,21 +293,21 @@ p {
     gap: 5px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
   .sections {
     width: 24rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   .contenedor-productos {
     display: flex;
     width: 23rem;
-   .box-productos{
-     .productos {
-       img {
-        width: 16rem;
-        border: solid;
-        border-radius: 10px;
+    .box-productos {
+      .productos {
+        img {
+          width: 16rem;
+          border: solid;
+          border-radius: 10px;
         }
       }
     }
@@ -308,7 +320,7 @@ p {
     width: fit-content;
     margin-top: 10px;
     flex-direction: column;
-    margin-left: -18px;
+    margin-left: 6px;
   }
   .contenedor-contactos {
     margin-left: 2rem;
@@ -366,13 +378,13 @@ p {
     justify-content: space-around;
     margin-top: 20px;
   }
-  .box-productos{
-  .productos img {
+  .box-productos {
+    .productos img {
       width: 450px;
       border: solid;
       border-radius: 10px;
+    }
   }
-}
   .contactos {
     padding: 20px;
     margin: 5px;

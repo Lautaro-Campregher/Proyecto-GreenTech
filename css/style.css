@@ -5,6 +5,12 @@
   font-size: 20px;
   cursor: pointer;
 }
+.button-enviar:hover, .contactos button:hover {
+  transform: scale(1.2);
+}
+.button-enviar:active, .contactos button:active {
+  transform: scale(0.95);
+}
 
 * {
   padding: 0%;
@@ -237,7 +243,7 @@ p {
   border-radius: white;
   width: 50%;
 }
-.contactos input:focus {
+.contactos input:hover {
   font-size: 25px;
 }
 .contactos textarea {
@@ -246,15 +252,19 @@ p {
   border-radius: white;
   width: 50%;
 }
-.contactos textarea:focus {
+.contactos textarea:hover {
   font-size: 25px;
 }
 .contactos button {
   background-color: black;
   color: #dae9ef;
+  transition: transform 0.3s ease;
 }
 .contactos button:hover {
-  transform: scale(1);
+  transform: scale(1.2);
+}
+.contactos button:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 500px) {
@@ -274,11 +284,11 @@ p {
     gap: 5px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
   .sections {
     width: 24rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   .contenedor-productos {
     display: flex;
@@ -297,7 +307,7 @@ p {
     width: fit-content;
     margin-top: 10px;
     flex-direction: column;
-    margin-left: -18px;
+    margin-left: 6px;
   }
   .contenedor-contactos {
     margin-left: 2rem;
