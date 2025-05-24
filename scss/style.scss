@@ -81,8 +81,11 @@ header {
 }
 main {
   section {
-    margin: 0% auto;
-    width: 80rem;
+    margin: 0 auto;
+    max-width: 80rem;
+    width: 100%;
+    padding: 0 1rem; // o 16px
+    box-sizing: border-box;
 
     h2 {
       text-align: center;
@@ -296,10 +299,7 @@ p {
     align-items: flex-start;
     margin-left: 3rem;
   }
-  .sections {
-    width: 24rem;
-    margin-left: 3rem;
-  }
+
   .contenedor-productos {
     display: flex;
     width: 23rem;
@@ -359,12 +359,7 @@ p {
     align-items: flex-start;
     margin-left: 10rem;
   }
-  .sections {
-    width: 40rem;
-    /*height: 70rem;
-    margin-top: 30px;*/
-    padding: 2rem;
-  }
+  
   .contenedor-servicios {
     display: flex;
     flex-direction: row;
