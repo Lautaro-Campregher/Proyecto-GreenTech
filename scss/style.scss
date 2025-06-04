@@ -184,6 +184,7 @@ p {
   justify-items: center;
   align-items: center;
   margin-top: 1rem;
+  overflow: hidden;
 
   .box-servicios {
     display: flex;
@@ -324,11 +325,10 @@ p {
     margin-top: 10px;
     flex-direction: column;
     margin-left: 2rem;
-    overflow: hidden;
 
     .servicios {
       &:hover {
-        width: 380px;
+        width: 360px;
         background-color: $secondary-color;
         color: $primary-color;
       }
