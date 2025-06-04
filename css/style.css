@@ -306,8 +306,10 @@ p {
     margin-top: 10px;
     flex-direction: column;
     margin-left: 2rem;
+    overflow: hidden;
   }
   .contenedor-servicios .servicios:hover {
+    width: 380px;
     background-color: #dae9ef;
     color: black;
   }
