@@ -308,7 +308,6 @@ p {
     margin-left: 2rem;
   }
   .contenedor-servicios .servicios:hover {
-    width: 355px;
     background-color: #dae9ef;
     color: black;
   }
