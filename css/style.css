@@ -300,12 +300,17 @@ p {
   .contenedor-servicios {
     display: flex;
     gap: 20px;
-    padding: 5px;
+    padding: 20px;
     justify-items: center;
     width: 90%;
     margin-top: 10px;
     flex-direction: column;
     margin-left: 2rem;
+  }
+  .contenedor-servicios .servicios:hover {
+    width: 355px;
+    background-color: #dae9ef;
+    color: black;
   }
   .contactos {
     padding: 20px;
