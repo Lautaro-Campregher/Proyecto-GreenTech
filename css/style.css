@@ -291,7 +291,16 @@ p {
     box-sizing: border-box;
   }
   main section h2 {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  main section h3 {
+    font-size: 35px;
+  }
+  main section p {
+    font-size: 25px;
+  }
+  main section li {
+    font-size: 20px;
   }
   .box-productos .productos img {
     width: 20rem;
