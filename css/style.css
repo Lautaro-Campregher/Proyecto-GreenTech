@@ -44,10 +44,10 @@ header {
 
 .navbar {
   background-color: #dae9ef !important;
-  padding: 20px;
 }
 .navbar h1 {
   text-transform: uppercase;
+  padding: 20px;
 }
 .navbar .container-fluid {
   margin-left: 0;
@@ -57,6 +57,19 @@ header {
 }
 .navbar .navbar-brand {
   font-size: 40px;
+}
+.navbar .nav-link {
+  color: rgba(0, 0, 0, 0.6509803922);
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: rgba(0, 0, 0, 0.8509803922);
+}
+.navbar .nav-link.active {
+  color: rgba(0, 0, 0, 0.6509803922);
+}
+.navbar .nav-link.active:hover {
+  color: rgba(0, 0, 0, 0.8509803922);
 }
 
 .container-fluid {
@@ -120,7 +133,7 @@ footer {
 }
 footer div {
   width: 1100px;
-  margin: 0% auto;
+  text-align: left;
 }
 
 p {

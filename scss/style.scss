@@ -58,8 +58,9 @@ header {
   background-color: $secondary-color !important;
   h1 {
     text-transform: uppercase;
+    padding: 20px;
   }
-  padding: 20px;
+  
   .container-fluid {
     margin-left: 0;
     margin-right: 0;
@@ -70,7 +71,25 @@ header {
   .navbar-brand {
     font-size: 40px;
   }
+  
+  .nav-link{
+    color:#000000A6;
+    transition: color 0.3s ease;
+    
+  &:hover {
+    color: #000000D9;
+  }
+
+  &.active {
+    color: #000000A6;
+
+    &:hover {
+      color: #000000D9;
+    }
+  }
+  }
 }
+ 
 .container-fluid {
   display: flex;
   flex-direction: column;
@@ -126,7 +145,7 @@ div {
 footer {
   div {
     width: 1100px;
-    margin: 0% auto;
+    text-align: left;
   }
   background-color: $secondary-color;
   position: fixed;
